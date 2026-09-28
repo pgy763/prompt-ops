@@ -1,0 +1,30 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地配置与密钥 —— 永远不要提交
+.env
+.env.local
+application-local.yml
+application-local.yaml
+*.key
+*.pem
+
+# 日志
+logs/
+*.log
