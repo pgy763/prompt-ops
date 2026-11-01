@@ -159,3 +159,5 @@ Prompt 的版本管理、回归测试、回滚能力，在传统软件工程里�
 
 - [hello-ai-backend](https://github.com/pgy763/hello-ai-backend) —— 写给 Java 后端工程师的 AI 接入手册
 - [llm-dev-pitfalls](https://github.com/pgy763/llm-dev-pitfalls) —— LLM 应用开发踩坑手册（按报错关键词索引）
+- [shopkeeper-agent](https://github.com/pgy763/shopkeeper-agent) —— 一个完整的 NL2SQL 项目，这套流程的「被管理」对象
+- [pgy763.github.io](https://pgy763.github.io/) —— 以上内容的总入口
