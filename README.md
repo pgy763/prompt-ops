@@ -1,6 +1,8 @@
 # Prompt Ops
 
 ![java](https://img.shields.io/badge/Java-17%2B-orange)
+
+[![ci](https://github.com/pgy763/prompt-ops/actions/workflows/ci.yml/badge.svg)](https://github.com/pgy763/prompt-ops/actions/workflows/ci.yml)
 ![spring](https://img.shields.io/badge/Spring_Boot-3.x-green)
 ![status](https://img.shields.io/badge/状态-MVP-blue)
 ![lang](https://img.shields.io/badge/语言-中文-red)
