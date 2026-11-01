@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      # -B 关掉交互、-ntp 只打必要日志。verify 会把测试也跑掉，
+      # 虽然现在还没有测试用例，但门禁先立起来 —— 以后加测试不用改 CI
+      - name: Build & test
+        run: mvn -B -ntp -U verify
+
+      # 构建产物只在 CI 里留一份，不提交进仓库
+      - name: Upload jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: prompt-ops-jar
+          path: target/*.jar
+          retention-days: 7

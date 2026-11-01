@@ -6,6 +6,8 @@
 ![lang](https://img.shields.io/badge/语言-中文-red)
 
 > **把 Prompt 当代码管理：版本、diff、回归测试。**
+>
+> 属于一组内容：**[接入手册](https://pgy763.github.io/hello-ai-backend/) 讲怎么接**、**[踩坑手册](https://pgy763.github.io/llm-dev-pitfalls/all) 记怎么错**、这里是**上线之后怎么别把它改坏**。总入口：[pgy763.github.io](https://pgy763.github.io/)
 
 ---
 
@@ -52,7 +54,7 @@ Prompt Ops 补的就是这一块。
 
 ## 快速开始
 
-需要 JDK 17+ 和一个 JDK（不需要数据库 —— 默认用内存库）。
+需要 JDK 17+ 和 Maven 3.9+（不需要数据库 —— 默认用内存库）。
 
 ```bash
 git clone https://github.com/pgy763/prompt-ops.git
@@ -255,7 +257,7 @@ LangSmith、PromptLayer 这类工具做得很好，但它们有两个前提：**
 | 组件 | 版本 |
 | --- | --- |
 | JDK | 17+ |
-| Spring Boot | 3.3.x |
+| Spring Boot | 3.3.4 |
 | 数据库 | H2（内存，开箱即用）／可换 MySQL |
 | 模型 | OpenAI 兼容协议（DeepSeek / 通义 / 智谱等） |
 
